@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board {
+    width: 300px;
+    height: 500px;
+    background-color: #F7E7E7;
+    position: relative;
+    left: 20px;
+    border-radius: 12px;
+     box-shadow:3px 2px 2px grey;
+     margin-top: 10px;
+}
+
+input {
+    width: 250px;
+    height: 55px;
+    position: relative;
+    left: 19px;
+    top: 32px;
+    font-size: 22px;
+    text-decoration: none;
+    background-color: white;
+    font-weight: 800;
+    word-spacing: 3px;
+    text-indent: 12px;
+    border: inset;
+}
+
+.btn-div {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 22px;
+    margin-top: 22px;
+    font-weight: 300;
+
+}

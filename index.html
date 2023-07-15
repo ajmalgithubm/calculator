@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="board">
+        <input id="input-1" disabled>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="btn-div">
+            <button onclick='num_fun(7)'>7</button>
+            <button onclick='num_fun(8)'>8</button>
+            <button onclick='num_fun(9)'>9</button>
+            <button onclick="num_fun('+')">+</button>
+        </div>
+        <div class="btn-div">
+            <button onclick='num_fun(4)'>4</button>
+            <button onclick='num_fun(5)'>5</button>
+            <button onclick='num_fun(6)'>6</button>
+            <button onclick='num_fun("-")'>-</button>
+        </div>
+        <div class="btn-div">
+            <button onclick='num_fun(1)'>1</button>
+            <button onclick='num_fun(2)'>2</button>
+            <button onclick='num_fun(3)'>3</button>
+            <button onclick='num_fun("*")'>x</button>
+        </div>
+        <div class="btn-div">
+            <button onclick='num_fun(0)'>0</button>
+            <button onclick='num_fun("/")'>÷</button>
+            <button onclick="num_fun('c')">C</button>
+            <button onclick='num_fun("=")'>=</button>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('input-1');
+
+        function num_fun(num) {
+            var x = document.getElementById('input-1');
+
+            if (num == '+' || num == '-' || num == '*' || num == '/') {
+                x.value = x.value + ' ' + num + ' ';
+            }
+            else if (num == '=') {
+                var y = eval(x.value);
+                x.value = y;
+            }
+            else if (num == 'c') {
+                x.value = '';
+            }
+            else {
+                x.value = x.value + num;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
